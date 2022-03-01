@@ -46,13 +46,11 @@
 
 @each $key, $value in $table {
     .td-#{$key}{
-        background-color: lighten($value, 20%);
+        background-color: rgba($value, $alpha: 0.2);
         color: darken($value, 20%);
-
-        .td-want{
-            background-color: lighten($value,50%);
-        }
     }
+
+    
 
     
 }
