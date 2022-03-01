@@ -1,0 +1,65 @@
+// Form controls styles goes here
+
+// head searcg bar
+.head-search{
+    @include position(relative);
+    border: $border-none;
+    height: $head-search-height;
+    width: $head-search-width;
+
+    @include for-size(large){
+        width: 320px;
+    }
+
+    // Responsive 768px
+    @include for-size(md){
+        width: 250px;
+        height: 35px;
+    }
+    
+    // Responsive 576px
+    @include for-size(sm){
+        width: 200px; 
+        height: 25px;
+    }
+
+    // Responsive 320px
+    @include for-size(x-sm){
+        width: 150px;
+    }
+
+    .icon-search{
+        @include position($top:0.75rem, $left:0.75rem);
+        color: $text-muted;
+
+        // Responsive 576px
+        @include for-size(sm){
+            @include position($top:0.25rem, $left:0.75rem);
+        }
+    }
+
+    input{
+        width: 100%;
+        padding-right: 6.5rem;
+        padding-left: 2.1rem;
+        background-color: $info;
+        border: none;
+        height: $head-form-height;
+        color: $text-muted;
+        outline: none;
+
+        // Responsive 576px
+        @include for-size(x-sm){
+            padding-right: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+         // Responsive 576px
+         @include for-size(lg){
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+}

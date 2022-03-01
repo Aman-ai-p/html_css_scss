@@ -1,0 +1,32 @@
+
+// main content
+.main-content{
+    background-color: $main-content-bg;
+    padding: $main-content-padding-x $main-content-padding-y;
+
+    h1{
+
+        font-size: $font-size-large;
+        font-weight: $font-medium;
+
+        // Responsive 768px
+        @include for-size(md) {
+            font-size: $font-size-medium;
+        }
+
+        // Responsive 576px
+        @include for-size(sm) {
+            font-size: $font-size-small;
+        }
+    }
+
+    .stats-section{
+        height: 500px;
+
+        // Responsive 768px
+        @include for-size(md) {
+            flex-wrap: wrap;
+        }
+    }
+}
+

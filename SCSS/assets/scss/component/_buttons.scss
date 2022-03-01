@@ -1,0 +1,32 @@
+// Button styles goes here
+
+// Head button
+.btn{
+    @include position(absolute, auto, 0, auto, auto);
+    width: 100px;
+    height: $head-search-height;
+    font-size: $font-size-small;
+    color: $white;
+    background-color: $primary;
+    border: $border-none;
+    cursor: pointer;
+
+    // Respnsive 768px
+    @include for-size(md){
+        width: 80px;
+        height: 35px;
+        font-size: $font-size-base;
+    }
+
+    // Responsive 576px
+    @include for-size(sm){
+        width: 60px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+
+    // Responsive 320px
+    @include for-size(x-sm){
+        display: none;
+    }
+}

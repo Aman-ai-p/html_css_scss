@@ -1,0 +1,39 @@
+.graph-container{
+    background-color: $white;
+    padding: $container-padding-x $container-padding-x;
+
+    // Responsive 768px
+    @include for-size(md){
+        height: 500px;
+        margin:  $md-responsive-margin-x 0;
+    }
+
+    .views-desc-box{
+        width: $graph-desc-box-width;
+        height: $graph-desc-box-height;
+        background-color: $success-secondary;
+    }
+
+    .sells-desc-box{
+        width: $graph-desc-box-width;
+        height: $graph-desc-box-height;
+        background-color: $accent;
+    }
+
+    .views-bar{
+        .bar{
+            width: $graph-bar-width;
+            height: 60px;
+            background-color: $accent;
+        }
+    }
+
+    .sells-bar{
+        .bar{
+            width: $graph-bar-width;
+            height: 100px;
+            background-color: $success-secondary;
+        }
+    }
+
+}

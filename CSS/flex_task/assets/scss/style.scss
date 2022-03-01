@@ -1,0 +1,27 @@
+// .main-wrapper{
+//     background-color: black;
+// }
+
+.aside-section-2{
+    background-color: black;
+}
+
+// nested rules
+.box{
+    h1{
+        color: red;
+    }
+    p{
+        color: blue
+    };
+}
+
+// nested properties
+.box-2{
+    font: {
+        family: serif;
+        size: 2rem;
+    }
+}
+
+       

@@ -1,0 +1,149 @@
+// Header area style
+
+// header
+#header{
+    height: $header-height;
+    border-bottom: 1px solid $light-dark;
+
+    // Responsive 768px
+    @include for-size(md){
+        height: 80px;
+    }
+
+    // Responsive 576px
+    @include for-size(sm){
+        height: 60px;
+    }
+
+    .head-logo{
+        background-color: $header-bg;
+        width: 100px;
+
+        .head-seacrh-icon{
+            font-size: $head-icon-search-size;
+        }
+
+        // Responsive 768px
+        @include for-size(md){
+            width: 80px;
+        }
+
+        // Responsive 576px
+        @include for-size(sm){
+            width: 60px;
+            .head-seacrh-icon{
+                padding-top: 0.2rem;
+                @include position($top:12px);
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+    .head-inner{
+        padding: $head-inner-padding-x $head-inner-padding-y;
+    }
+
+    .head-profile{
+
+        .menu{
+            @include for-size(sm){
+                display: none;
+            }
+        }
+        
+        li:not(:first-child){
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+
+        li:nth-child(4){
+            font-size: $icon-font-size;
+            color: $icon-color;
+            transform: rotate(-90deg);
+        }
+
+        .head-icon{
+            font-size: $icon-font-size;
+            color: $icon-color;
+            
+            &:hover{
+                color: $primary;
+            }
+
+            // Responsive 768px
+            @include for-size(md){
+                font-size: $font-size-small;
+            }
+        }
+        
+        li:not(:last-child){
+            position: relative;
+            .notification-badge{
+                @include position($top:-4px, $left: 20px);
+                width: 7px;
+                height: 7px;
+                background: $accent;
+                border-radius: $rounded-cricle;
+            }
+        }
+        
+        .account{
+            border-radius: $rounded-cricle;
+            width: $img-avatar-width;
+            height: $img-avatar-height;
+
+            // Responsive 768px
+            @include for-size(md){
+                width: $md-img-avatar-width;
+                height: $md-img-avatar-height;
+            }
+        }
+
+        .model{
+            display: none;
+            position: relative;
+            // Responsive 576px
+            @include for-size(sm){
+                display: flex;
+            }
+
+            &-icon{
+                font-size: $icon-font-size;
+                color: $icon-color;
+                transform: rotate(-90deg);
+            }
+            
+            &-list{
+                @include position(absolute, $top:1.75rem , $left:-6.25rem);
+                display: none;
+                background-color: $white;
+                box-shadow: 10px 10px 50px 5px $light-dark;
+                li{
+                    a{
+                        color: $primary;
+                    }
+                    margin: 0;
+                    padding: 1rem;
+                    &:hover{
+                        background-color: $primary;
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            #model-toggle{
+                display: none;
+
+                &:checked{
+                    & ~ .model-list{
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}

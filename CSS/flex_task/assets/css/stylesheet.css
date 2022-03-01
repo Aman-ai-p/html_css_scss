@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* htnl, body */
+html, body{
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* whole wrapper */
+.wrapper{
+    display: flex;
+    height: 100%;
+    background-color: white;
+}
+
+/* aside-bar */
+.aside-wrapper{
+    flex-grow: 1;
+    flex-direction: row;
+    height: 100%;
+    max-width: 200px;
+}
+
+/* right content */
+.content-wrapper{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* right-header */
+.header-wrapper{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #e4e4e4;
+    border-bottom: 1px solid #c2bfbf ;
+}
+
+/* right-main */
+.main-wrapper{
+    display: flex;
+    width: 100%;
+    /* background-color: #fafafa; */
+    height: 100%;
+    overflow: auto;
+}
+
+/* aside-header */
+.aside-header{
+    display: flex;
+    background-color: white;
+}
+
+.aside-header a{
+    text-decoration: none;
+    color: #565656;
+}
+
+/* aside-main-content */
+.aside-main{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    height: 100%;
+    overflow: auto;
+}
+
+.aside-main a{
+    text-decoration: none;
+    color: #565656;
+}
+
+.aside-main a:hover{
+    background-color: #e4e4e4 ;
+    color: rgb(36, 35, 35);
+}
+
+.aside-section-1{
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    border-bottom: 1px solid #e6e4e4 ;
+}
+
+.aside-section-2{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-grow: 0;
+    margin: 60px 0;
+    height: 100%;
+}
+
+.aside-items,i{
+    padding: 10px 0;
+}
+
+/* right-main-content */
+.search{
+    display: flex;
+}
+
+.search input{
+    width: 800px;
+    border: none;  
+    height: 30px; 
+    padding-left: 10px;
+}
+
+.search-icon{
+    padding-top: 10px;
+    height: 30px;
+    background-color: white;
+}
+
+
+.btn button{
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(115, 214, 140);
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: white ;
+    color: rgb(115, 214, 140);
+}

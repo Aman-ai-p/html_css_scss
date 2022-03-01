@@ -1,0 +1,75 @@
+// sidebar
+
+// Checkbox display
+#side-menu{
+    display: none;
+}
+
+// sidebar navlist
+.nav{
+    @include position(relative);
+    flex-basis: 100px;
+    width: 100px;
+    background-color: $white;
+    transition: $transition-s;
+    z-index: 1;
+
+    .navlist{
+        width: 100%;
+        padding-top: $main-content-padding-x;
+        padding-bottom: $navlist-padding-bottom;
+        transition: $transition-s;
+
+        .nav-items:not(:first-child){
+            padding-top: $nav-item-padding-top;
+        }
+    }
+
+    .nav-icon{
+        font-size: $icon-font-size;
+        color: $icon-color;
+        transition: $transition-s;
+
+        &:hover{
+            color: $primary;
+        }
+
+        // Responsive 768px
+        @include for-size(md){
+            font-size: $icon-md-size;
+        }
+    }
+
+    .toggle-icon{
+        @include position(absolute,$top:1%, $left:100%);
+        font-size: $font-size-small;
+        color: $icon-color;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    // Responsive 576px
+    @include for-size(sm){
+        @include position(absolute);
+        box-shadow: $box-shadow-light;
+    }
+}
+
+#side-menu:checked ~.nav{
+    flex-basis: 0; 
+    width: 0;
+    transition: $transition-s;
+    // z-index: 1;
+
+    .toggle-icon{
+        transform: rotate(180deg);
+    }
+
+    .navlist{
+        width: 0;
+        transition: $transition-s;
+    }
+    
+}

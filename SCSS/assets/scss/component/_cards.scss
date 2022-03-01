@@ -1,0 +1,93 @@
+// Card styles goes here
+
+// content card
+.card-inner{
+    height: 240px;
+    
+    /// Respnsive 768px
+    @include for-size(md){
+        width: 50%;
+        margin: $md-responsive-margin-x 0;
+    }
+
+    // Respnsive 576px
+    @include for-size(sm){
+        width: 100%;
+    }
+
+    .card{
+        background-color: $white;
+        height: 100%;
+
+        &-header{
+            padding: $card-item-padding-x $card-item-padding-y;
+            
+        }
+        
+        &-icon{
+            font-size: $icon-font-size;
+            width: $card-icon-width;
+            height: $card-icon-height;
+        }
+
+        &-body{
+            padding: 0 $card-item-padding-y;
+            padding-bottom: $card-item-padding-y;
+        }
+
+        &-title{
+            font-size: 1.05rem;
+            font-weight: $font-small;
+            padding-bottom: $card-body-text-padding-bottom;
+            color: $text-muted;
+        }
+    
+        &-subtitle{
+            font-size: $font-size-large;
+            padding-bottom: $card-body-text-padding-bottom;
+            border-bottom: 1px solid $light-dark;
+        }
+    
+        &-description{
+            font-size: $font-size-base;
+            padding-top: 0.85rem;
+            color: $text-muted;
+        }
+
+
+        &:hover{
+            color: $white;
+            .card-title, .card-description, .icon, a{
+                color: $white; 
+            }
+        }
+    }
+    
+}
+
+
+// color classes map
+@each $key,
+$value in $cards {
+
+    .card-#{$key} {
+
+        .card-icon-bg{
+            background-color: lighten($value, 30%);
+        }
+
+        .icon {
+            color: $value;
+        }
+
+       &.card{
+        &:hover {
+            background-color: $value;
+            color: $white;
+            .card-icon-bg{
+                background-color: lighten($value, 8%);
+            }
+        }
+       }
+    }
+}
