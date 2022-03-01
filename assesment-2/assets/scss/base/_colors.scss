@@ -1,0 +1,41 @@
+// Theme Primary Color
+$primary: #00b11c;
+$secondary: #f2fcf4;
+$info : #51a3f3;
+$success : #5ecea1;
+$success-secondary : #6e6bf7;
+$accent : #ea9e9e;
+$warning : #f8a553;
+$white: #ffff;
+$dark : #000;
+
+// Body
+$body-bg: #ffffff;
+$body-color : #000;
+$icon-color : #82838c;
+
+$text-muted: #8d8e94;
+
+// Header
+$brand-icon-color: #e7e6e9;
+
+// Main content
+$main-bg : #fafafa;
+
+// Map Card
+$cards: (
+    "scans": $dark,
+    "list" : $info,
+    "cost" : $success,
+    "cart" : $warning,
+    "cheap" : $success-secondary ,
+    "health" : $accent
+);
+
+// Table Map
+$table: (
+    "discarded" : $accent,
+    "want" : $primary,
+    "waiting" : $warning,
+    "cancelled" : $dark
+);

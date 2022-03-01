@@ -1,0 +1,74 @@
+// Card styles goes here
+
+.card-inner{
+    height: 100px;
+    margin-bottom: $xl-responsive-margin-bottom;
+
+    .card{
+        background-color: $white;
+        height: 100%;
+        padding: $card-padding-x $card-padding-y;
+        transition: $transition-4;
+
+        &-body{
+            .card-title{
+                font-size: $font-size-base;
+                font-weight: $font-medium;
+                color: $text-muted;
+            }
+
+            .card-subtitle{
+                font-size: $font-size-large;
+                font-weight: $font-medium;
+            }
+        }
+
+        &-icon{
+            width: 60px;
+            border-radius: $rounded-cricle;
+            .icon{
+                font-size: $font-size-medium;
+            }
+        }
+
+        &:hover{
+            .card-title{
+                transition: $transition-4;
+                color: $white;
+            }
+        }
+    }
+}
+
+// Card map
+@each $key, $value in $cards {
+    .card-#{$key} {
+        .card-icon-bg {
+            background-color: lighten($value, 20%);
+        }
+        .card-icon-barcode-bg {
+            background-color: lighten($value, 90%);
+        }
+        .icon{
+            color: $value
+        }
+        &:hover{
+            transition: $transition-4;
+            background-color: $value;
+            color: $white;
+            .card-icon-barcode-bg {
+                transition: $transition-4;
+                background-color: lighten($value, 20%);
+            }
+            .card-icon-bg{
+                transition: $transition-4;
+                background-color: lighten($value, 8%);
+            }
+            .icon{ 
+                transition: $transition-4;
+                color: $white;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,60 @@
+// Sidebar
+
+.navbar{
+    flex-basis: 200px;
+    width: 200px;
+    transition: 0.4s all ease;
+    z-index: 1;
+    background-color: $white;
+
+    @include for-size(xl){
+        position: absolute;
+    }
+
+    &-subtitle{
+        font-size: $font-size-base;
+        font-weight: $font-medium;
+        letter-spacing: 1px;
+    }
+
+    .navlist{
+        padding-bottom: $navlist-padding-bottom;
+
+        .nav-items{
+            padding: $navbar-item-padding-x $navbar-item-padding-y;
+
+            &-icon{
+                font-size: $font-size-medium;
+                color: $icon-color;
+            }
+            &-title{
+                padding-left: $navbar-item-padding-y;
+            }
+
+            &:hover{
+                    background-color: lighten($color: $primary, $amount: 60%);
+                    border-left: 3px solid $primary;
+                    .nav-list-icon{
+                        color: $primary;
+                        margin-left: -3px;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+#side-menu{
+    display: none;
+
+    &:checked {
+        & ~ .navbar{
+            transition: $transition-4;
+            flex-basis: 0;
+            width: 0;
+        }
+
+        
+    }
+}
