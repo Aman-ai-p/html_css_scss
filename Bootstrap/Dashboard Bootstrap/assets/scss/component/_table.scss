@@ -1,0 +1,58 @@
+// Table scss
+
+.table-content{
+    background-color: $white;
+
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+
+        th{
+            position: sticky;
+            top: 0;
+            color: $text-muted;
+            font-size: $font-size-base;
+            font-weight: $font-medium;
+            background-color: $white;
+            border-bottom: 1px solid $main-bg;
+        }
+
+        td{
+            border-bottom: 1px solid $main-bg;
+            .table-img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .table-td-type{
+            border-radius: 12px;
+        }
+    
+        td,th{
+            text-align: left;
+            padding: $table-cell-padding-x $table-cell-padding-y;
+        }
+        .table-image{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+}   
+
+
+// Map
+
+// @each $key, $value in $table {
+//     .td-#{$key}{
+//         background-color: rgba($value, $alpha: 0.2);
+//         color: darken($value, 20%);
+//     }
+
+    
+
+    
+// }
+
+    

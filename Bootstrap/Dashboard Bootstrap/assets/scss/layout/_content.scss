@@ -1,0 +1,10 @@
+.main-content{
+    padding: $main-content-padding-x $main-content-padding-y;
+    background-color: $main-bg;
+
+    h3{
+        font-size: $font-size-medium;
+        font-weight: $font-medium;
+        padding-bottom: $main-content-padding-x;
+    }
+}
