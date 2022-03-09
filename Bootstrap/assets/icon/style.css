@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1aqbck');
+  src:  url('fonts/icomoon.eot?1aqbck#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1aqbck') format('truetype'),
+    url('fonts/icomoon.woff?1aqbck') format('woff'),
+    url('fonts/icomoon.svg?1aqbck#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down-right21:before {
+  content: "\e900";
+}
+.icon-arrow-up-right21:before {
+  content: "\e901";
+}
+.icon-checkbox-unchecked1:before {
+  content: "\e902";
+}
+.icon-circle-right1:before {
+  content: "\e903";
+}
+.icon-compass21:before {
+  content: "\e904";
+}
+.icon-equalizer1:before {
+  content: "\e906";
+}
+.icon-eye1:before {
+  content: "\e907";
+}
+.icon-home21:before {
+  content: "\e908";
+}
+.icon-home31:before {
+  content: "\e909";
+}
+.icon-library1:before {
+  content: "\e90a";
+}
+.icon-menu1:before {
+  content: "\e90b";
+}
+.icon-radio-unchecked1:before {
+  content: "\e90c";
+}
+.icon-search1:before {
+  content: "\e90d";
+}
+.icon-stats-bars21:before {
+  content: "\e90e";
+}
+.icon-trophy1:before {
+  content: "\e90f";
+}
+.icon-user1:before {
+  content: "\e910";
+}
+.icon-cog:before {
+  content: "\e905";
+}
+.icon-home2:before {
+  content: "\e911";
+}
+.icon-home3:before {
+  content: "\e912";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-compass2:before {
+  content: "\e94a";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+.icon-trophy:before {
+  content: "\e99e";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-arrow-up-right2:before {
+  content: "\ea3b";
+}
+.icon-arrow-down-right2:before {
+  content: "\ea3d";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}

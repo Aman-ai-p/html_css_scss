@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="./assets/icon/style.css">
+    <title>Dashboard Bootstrap</title>
+</head>
+<body>
+
+    <!-- Start: Main Wrapper -->
+    <section class="d-flex h-100">
+
+        <!-- Start: Sidebar -->
+        <aside class="side-bar d-flex flex-column h-100">
+
+            <div class="d-flex p-4">
+                <span class="icon-checkbox-unchecked1 navbar-brand"></span>
+            </div>
+
+            <div class="align-items-start flex-grow-1 d-flex flex-column pt-4 pb-4">
+                <ul class="nav flex-grow flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active mt-2 d-flex align-items-center" href="#">
+                          <span class="icon-home21 px-3"></span>
+                          <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mt-2 d-flex align-items-center" href="#">
+                        <span class="icon-trophy px-3"></span>
+                        <span class="link">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mt-2 d-flex align-items-center" href="#">
+                        <span class="icon-library px-3"></span>  
+                        <span class="link">Billings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mt-2 d-flex align-items-center" href="#">
+                        <span class="icon-user1 px-3"></span>
+                        <span class="link">Team Members</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mt-2 d-flex align-items-center" href="#">
+                        <span class="icon-stats-bars21 px-3"></span>  
+                        <span class="link">Stats</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mt-2 d-flex align-items-center" href="#">
+                        <span class="icon-cog px-3"></span>  
+                        <span class="link">Settings</span>
+                        </a>
+                    </li>
+                  </ul>
+            </div>
+        </aside>
+        <!-- End: Sidebar -->
+
+        <!-- Start: Main Content -->
+        <main class="d-flex flex-grow-1 p-5">
+            
+            <!-- Start: content section -->
+            <div class="flex-column flex-grow-1">
+              
+              <div class="search input-group flex-nowrap">
+                    <span class="input-group-text icon-search1" id="addon-wrapping"></span>
+                    <input type="text" class="form-control" placeholder="Search for stats" aria-label="search" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                  <div>
+                    <h2>Hello David</h2>
+                    <p class="text-muted">Welcome Back!</p>
+                  </div>
+
+                  <div class="filter input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="Filters" >
+                    <span class="input-group-text icon-equalizer1" id="addon-wrapping"></span>
+                  </div>
+                </div>
+
+                <div class="container bg-warning daily-stats mt-4">
+                  <div class="row row-cols-3 p-4">
+
+                    <!-- Start:Per day card  -->
+                    <div class="col d-flex flex-column">
+                      <div class="daily-stats-icon p-2">
+                        <span class="icon-eye1"></span>
+                      </div>
+                      <p class="">Views</p>
+                      <h4 class="">500</h4>
+                      <p class="">Per Day</p>
+                    </div>
+                    <!-- End: Per day card  -->
+                    
+                    <!-- Start: Per minutes card  -->
+                    <div class="col d-flex flex-column">
+                      <div class="daily-stats-icon p-2">
+                        <span class="icon-eye1"></span>
+                      </div>
+                      <p>Views</p>
+                      <h4>500</h4>
+                      <p>Per Day</p>
+                    </div>
+                    <!-- End: Per minutes card  -->
+                    
+                    <!-- Start: Per Day card  -->
+                    <div class="col d-flex flex-column">
+                      <div class="daily-stats-icon p-2">
+                        <span class="icon-eye1"></span>
+                      </div>
+                      <p>Views</p>
+                      <h4>500</h4>
+                      <p>Per Day</p>
+                    </div>
+                    <!-- End: Per Day card  -->
+
+                  </div>
+                </div>
+
+                <div class="container-fluid mt-4 mb-4">
+                  <div class="row">
+
+                    <div class="col-6 bg-info p-3">
+                      <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                    </div>
+                    
+                    <div class="col-6 bg-success p-3">
+                      <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                    </div>
+
+                    <div class="col-6 bg-secondary p-3">
+                      <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                    </div>
+
+                    <div class="col-6 bg-light p-3">
+                      <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- End: content section -->
+
+            <!-- Start: Sales revenue Section -->
+            <div class="sales-revenue-container">
+              
+            </div>
+            <!-- End: Sales revenue Section -->
+
+        </main>
+        <!-- End: Main Content -->
+        
+    </section>
+    <!-- End: Main Wrapper -->
+    
+</body>
+</html>

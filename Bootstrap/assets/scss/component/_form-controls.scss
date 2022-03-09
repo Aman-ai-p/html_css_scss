@@ -1,0 +1,26 @@
+// Form controls styles goes here
+
+.search{
+    width: 480px;
+
+    .input-group-text{
+        border-right: 0;
+    }
+    
+    .form-control{
+        border-left: 0;
+    }
+}
+
+
+.filter{
+    width: 100px;
+    
+    .input-group-text{
+        border-left: 0;
+    }
+
+    .form-control{
+        border-right: 0;
+    }
+}
