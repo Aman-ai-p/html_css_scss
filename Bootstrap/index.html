@@ -16,7 +16,7 @@
     <section class="d-flex h-100">
 
         <!-- Start: Sidebar -->
-        <aside class="side-bar d-flex flex-column h-100">
+        <aside class="side-bar d-flex flex-column h-100 flex-shrink-0">
 
             <div class="d-flex p-4">
                 <span class="icon-checkbox-unchecked1 navbar-brand"></span>
@@ -88,7 +88,7 @@
                   </div>
                 </div>
 
-                <div class="container bg-warning daily-stats mt-4">
+                <div class="bg-warning daily-stats mt-4">
                   <div class="row row-cols-3 p-4">
 
                     <!-- Start:Per day card  -->
@@ -96,9 +96,9 @@
                       <div class="daily-stats-icon p-2">
                         <span class="icon-eye1"></span>
                       </div>
-                      <p class="">Views</p>
+                      <p class="text-muted">Views</p>
                       <h4 class="">500</h4>
-                      <p class="">Per Day</p>
+                      <p class="text-muted">Per Day</p>
                     </div>
                     <!-- End: Per day card  -->
                     
@@ -107,9 +107,9 @@
                       <div class="daily-stats-icon p-2">
                         <span class="icon-eye1"></span>
                       </div>
-                      <p>Views</p>
-                      <h4>500</h4>
-                      <p>Per Day</p>
+                      <p class="text-muted">Views</p>
+                      <h4 class="">500</h4>
+                      <p class="text-muted">Per Day</p>
                     </div>
                     <!-- End: Per minutes card  -->
                     
@@ -118,9 +118,9 @@
                       <div class="daily-stats-icon p-2">
                         <span class="icon-eye1"></span>
                       </div>
-                      <p>Views</p>
-                      <h4>500</h4>
-                      <p>Per Day</p>
+                      <p class="text-muted">Views</p>
+                      <h4 class="">500</h4>
+                      <p class="text-muted">Per Day</p>
                     </div>
                     <!-- End: Per Day card  -->
 
@@ -128,33 +128,121 @@
                 </div>
 
                 <div class="container-fluid mt-4 mb-4">
-                  <div class="row">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                    <div class="col-6 bg-info p-3">
-                      <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                    <!-- Start: Sales card -->
+                    <div class="col">
+                      <div class="card p-3 bg-info">
+                        <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                        <div class="card-body d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-subtitle text-muted">Total Sales Today</p>
+                            <h5 class="card-title">$500</h5>
+                          </div>
+                          <div class="card-stats">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Sales card -->
+
+                    <!-- Start: Sales card -->
+                    <div class="col">
+                      <div class="card p-3 bg-success">
+                        <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                        <div class="card-body d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-subtitle text-muted">Total Sales Today</p>
+                            <h5 class="card-title">$500</h5>
+                          </div>
+                          <div class="card-stats">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Sales card -->
+
+                    <!-- Start: Sales card -->
+                    <div class="col">
+                      <div class="card p-3 bg-secondary">
+                        <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                          <div>
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-subtitle text-muted">Total Sales Today</p>
+                            <h5 class="card-title">$500</h5>
+                          </div>
+                          <div class="card-stats">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Sales card -->
+
+                    <!-- Start: Sales card -->
+                    <div class="col">
+                      <div class="card p-3 bg-light">
+                        <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                        <div class="card-body d-flex justify-content-between">
+                          <div>
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-subtitle text-muted">Total Sales Today</p>
+                            <h5 class="card-title">$500</h5>
+                          </div>
+                          <div class="card-stats">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End : Sales card -->
+
+                    
+                  </div>
+
+                  <!-- <div class="row row-cols-2">
+
+                    <div class="col card mb-3">
+                      <div class="bg-info">
+                        <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                      </div>
                     </div>
                     
-                    <div class="col-6 bg-success p-3">
-                      <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                    <div class="col bg-success mb-3">
+                      <div class="">
+                        <span class="icon-arrow-down-right21 d-flex justify-content-end"></span>
+                      </div>
                     </div>
 
-                    <div class="col-6 bg-secondary p-3">
-                      <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                    <div class="col bg-secondary mb-3">
+                      <div class="  ">
+                        <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                      </div>
                     </div>
 
-                    <div class="col-6 bg-light p-3">
-                      <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                    <div class="col bg-light mb-3">
+                      <div class="">
+                        <span class="icon-arrow-up-right21 d-flex justify-content-end"></span>
+                      </div>
                     </div>
 
-                  </div>
+                  </div> -->
                 </div>
 
               </div>
               <!-- End: content section -->
 
             <!-- Start: Sales revenue Section -->
-            <div class="sales-revenue-container">
-              
+            <div class="sales-revenue-container bg-primary ms-4">
+              <div class="d-flex flex-column px-5 mt-4">
+                <h3 class="text-muted">Sales Revenue</h3>
+
+              </div>
             </div>
             <!-- End: Sales revenue Section -->
 
