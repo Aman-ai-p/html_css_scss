@@ -1,8 +1,56 @@
 // Card styles goes here
 
-.card-stats{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: $primary;
+// Daily stats card
+.daily-stats{
+    border-radius: $border-radius;
+}
+
+.card-daily-stats-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.daily-stat-card-body{
+    .card-subtitle{
+        font-size: $h1-font-size;
+        font-weight: $font-weight-bolder;
+    }   
+}
+
+// Sales, Profit, Orders, visits cards
+.card{
+    border-radius: $border-radius;
+
+    .card-body{
+        .card-title{
+            font-weight: $font-weight-bolder;
+        }
+
+        .card-desc{
+            font-size: $h3-font-size;
+        }
+
+        .card-stats{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: $primary;
+        }
+    }
+}   
+
+// Sales revenue Card
+.sales-revenue-card{
+    border-radius: $border-radius;
+}
+
+// Card Color Map
+@each $key, $value in $cards{
+   .card-#{$key} {
+       background-color: darken($value, 10%);
+   }
+
+   .icon-#{$key} {
+       color: darken($value, 40%)
+   }
 }

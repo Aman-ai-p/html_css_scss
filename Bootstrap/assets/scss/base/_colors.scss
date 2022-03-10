@@ -3,14 +3,30 @@ $primary: #000000;
 $secondary: #e6f5fa;
 $warning: #f9f8f3;
 $info: #ffeee2;
-$light: #f4f5f9;
+$light: #cfcfcf;
 $success: #eefcef;
 
 // Body
-$body-bg: #ffffff;
+$body-bg : #ffffff;
+
+// Sidebar
+$sidebar-border-color : $light;
+$nav-link-border-color : $primary;
+$sidebar-bg: #ffffff;
+
+// Sidebar Profile account
+$profile-account-border-color: $light;
+$profile-account-badge-color : #008000;
 
 // Form input
 $input-group-addon-bg: transparent;
 $input-focus-border-color: #ced4da;
 
-
+// Card theme
+$cards:(
+    "daily-stats-icon" : $warning,
+    "sales" : $info,
+    "profit" : $success,
+    "orders" : $secondary,
+    "visits" : $light
+)

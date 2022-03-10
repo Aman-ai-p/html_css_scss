@@ -1,15 +1,61 @@
 // Side bar Style 
 .side-bar{
-    width: 250px;
-    border-right: 3px solid $light;
+    flex: 0 0 $sidebar-width;
+    width: $sidebar-width;
+    border-right: $sidebar-border-left-width solid $sidebar-border-color;
+    background-color: $sidebar-bg;
+    transition: 0.4s all ease;
+
+    .toggle-icon{
+        top: 0;
+        left: 0;
+    }
 }
 
 .nav-link{
-    border-left: 5px solid transparent;
+    border-left: $nav-link-border-width solid transparent;
 
     &:hover,
     &:active{
-        border-left: 5px solid $primary;
+        border-left: $nav-link-border-width solid $nav-link-border-color;
         font-weight: $font-weight-bold;
+        transition: 0.3s all ease;
     }
+}
+
+// Profile Account
+.profile-account{
+    width: $profile-account-width ;
+
+    .profile-img-border{
+        border: $profile-account-img-border solid $profile-account-border-color;
+        padding: $profile-account-img-padding-y $profile-account-img-padding-x;
+        border-radius: $border-radius;
+
+        .profile-img{
+            width: $profile-account-img-width;
+            height: $profile-account-img-height;
+            border-radius: $border-radius;
+        }
+
+        .profile-badge{
+            width: $profile-account-badge-width;
+            height: $profile-account-badge-height;
+            border-radius: $profile-account-badge-border-radius;
+            top: 60px;
+            right: -8px;
+            background: $profile-account-badge-color;
+        }
+    }
+}
+
+#toggle-sidebar{
+    display: none;
+}
+
+#toggle-sidebar:checked 
+~.side-bar{
+    flex: 0 0 0;
+    width: 0;
+    transition: 0.4s all ease;
 }

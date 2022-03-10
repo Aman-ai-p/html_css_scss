@@ -1,12 +1,33 @@
 // All the SCSS Variables goes here
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 1rem;
+$font-weight-normal: 400;
 $font-weight-bold: 500;
+$font-weight-bolder : 700;
 
+// Sidebar
+$sidebar-width : 250px;
+$sidebar-border-left-width : 1px;
 
 // Sidebar Nav-link
 $nav-link-font-size : 1.25rem;
 $nav-link-color : $primary;
+$nav-link-border-width : 3px;
+
+// Sidebar account profile
+$profile-account-width : 100%;
+$profile-account-img-border : 2px;
+$profile-account-img-width : 60px;
+$profile-account-img-height : 60px;
+$profile-account-badge-width : 1rem;
+$profile-account-badge-height : 1rem;
+$profile-account-img-padding-y: 0.5rem;
+$profile-account-img-padding-x: 0.5rem;
+$profile-account-badge-border-radius : 100%;
 
 // Input search
 $input-border-radius: 10px;
 $input-focus-box-shadow: 0;
 
+// Card border radius
+$border-radius : 1rem;
