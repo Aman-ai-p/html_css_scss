@@ -1,7 +1,11 @@
 // Form controls styles goes here
 
 .search{
-    width: 480px;
+    width: $input-width;
+
+    @include media-breakpoint-down(sm){
+        width: $input-sm-width;
+    }
 
     .input-group-text{
         border-right: 0;

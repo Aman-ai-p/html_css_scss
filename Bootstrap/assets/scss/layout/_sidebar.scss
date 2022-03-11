@@ -4,28 +4,39 @@
     width: $sidebar-width;
     border-right: $sidebar-border-left-width solid $sidebar-border-color;
     background-color: $sidebar-bg;
-    transition: 0.4s all ease;
+    transition: $transition-s all ease;
 
-    .toggle-icon{
-        top: 0;
-        left: 0;
+    @include media-breakpoint-down(lg) {
+        position: absolute;
+        z-index: 1;
     }
+}
+
+.toggle-icon{
+    top: 16px;
+    left:0;
+    font-size: $font-size-base;
+    z-index : 3;
 }
 
 .nav-link{
     border-left: $nav-link-border-width solid transparent;
+    transition: $transition-s all ease;
+    transform: translate(0px);
 
     &:hover,
-    &:active{
+    &.active{
         border-left: $nav-link-border-width solid $nav-link-border-color;
         font-weight: $font-weight-bold;
-        transition: 0.3s all ease;
+        transition: $transition-s all ease;
     }
 }
 
 // Profile Account
 .profile-account{
-    width: $profile-account-width ;
+    width: $profile-account-width;
+    transition: $transition-s all ease;
+    transform: translate(0px);
 
     .profile-img-border{
         border: $profile-account-img-border solid $profile-account-border-color;
@@ -54,8 +65,18 @@
 }
 
 #toggle-sidebar:checked 
-~.side-bar{
-    flex: 0 0 0;
-    width: 0;
-    transition: 0.4s all ease;
+    ~.side-bar{
+        flex: 0 0 0;
+        width: 0;
+        transition: $transition-s all ease;
+
+        .nav-link{
+            transform: translate(180px);
+            transition: $transition-s all ease;
+        }
+
+        .profile-account{
+            transition: $transition-s all ease;
+            transform: translate(180px);
+        }
 }

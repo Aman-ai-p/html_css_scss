@@ -9,5 +9,7 @@ html,body{
     height: 100%;
 }
 
-
-
+.overflow-vertical{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
